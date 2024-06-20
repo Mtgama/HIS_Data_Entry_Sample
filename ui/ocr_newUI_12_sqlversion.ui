@@ -1,0 +1,1946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1238</width>
+    <height>732</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>پذیرش هوشمند</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/techp/Downloads/text-recognising.png</normaloff>C:/Users/techp/Downloads/text-recognising.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>حالت تاریک</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFontComboBox" name="fontComboBox_2">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_14">
+       <property name="styleSheet">
+        <string notr="true">
+            QPushButton {
+                background-color: rgb(170, 170, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+       </property>
+       <property name="text">
+        <string>اطلاعات من</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="styleSheet">
+        <string notr="true">
+            QPushButton {
+                background-color: rgb(170, 170, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+       </property>
+       <property name="text">
+        <string>خروج</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_11">
+       <property name="toolTip">
+        <string>خطا های برنامه رو کپی و برای کارشناس مربوطه ارسال کنید.</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(246, 146, 249);</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_23">
+       <property name="text">
+        <string>خطا های برنامه:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>4</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>پرونده</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="5,0">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="label">
+                   <property name="text">
+                    <string>نام و نام خانوادگی:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit">
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_3">
+                   <property name="text">
+                    <string>جنسیت:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox">
+                   <property name="styleSheet">
+                    <string notr="true">font: 87 8pt &quot;Arial Black&quot;;
+background-color: rgb(202, 255, 227);
+   </string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>نامعلوم</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>مرد</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>زن</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>شرح بیمار:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTextEdit" name="textEdit">
+                   <property name="styleSheet">
+                    <string notr="true">
+background-color: rgb(202, 255, 227);</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string>شماره همراه:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_2">
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_14"/>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_26">
+                   <property name="text">
+                    <string>کد ملی:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_12">
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <item>
+                    <widget class="QPushButton" name="pushButton_3">
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+            QPushButton {
+                background-color: rgb(255, 255, 127);
+                color: black;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(245, 245, 122);
+            }
+        
+</string>
+                     </property>
+                     <property name="text">
+                      <string>استخراج متن</string>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>C:/Users/techp/Downloads/kisspng-computer-icons-prettygirl-finder-wedding-air-hor-not-allowed-5aeca6e354ef56.2381821615254586593479.png</normaloff>C:/Users/techp/Downloads/kisspng-computer-icons-prettygirl-finder-wedding-air-hor-not-allowed-5aeca6e354ef56.2381821615254586593479.png</iconset>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton_4">
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="toolTip">
+                      <string>استخراج متن از تصویر</string>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+            QPushButton {
+                background-color: rgb(255, 255, 127);
+                color: black;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(245, 245, 122);
+            }
+        
+</string>
+                     </property>
+                     <property name="text">
+                      <string>انتخاب تصویر - OCR</string>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>C:/Users/techp/Downloads/kisspng-computer-icons-prettygirl-finder-wedding-air-hor-not-allowed-5aeca6e354ef56.2381821615254586593479.png</normaloff>C:/Users/techp/Downloads/kisspng-computer-icons-prettygirl-finder-wedding-air-hor-not-allowed-5aeca6e354ef56.2381821615254586593479.png</iconset>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton">
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="toolTip">
+                      <string>تایپ صوتی </string>
+                     </property>
+                     <property name="layoutDirection">
+                      <enum>Qt::LeftToRight</enum>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+            QPushButton {
+                background-color: rgb(255, 170, 0);
+                color: black;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(225, 150, 0);
+            }
+        
+</string>
+                     </property>
+                     <property name="text">
+                      <string>تایپ صوتی</string>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>C:/Users/techp/Downloads/kisspng-computer-icons-microphone-icon-design-5afc336be510b8.5558613315264776759383.png</normaloff>C:/Users/techp/Downloads/kisspng-computer-icons-microphone-icon-design-5afc336be510b8.5558613315264776759383.png</iconset>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>برچسب ها:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QListWidget" name="listWidget">
+                 <property name="styleSheet">
+                  <string notr="true">
+
+
+QListWidget {
+    background-color:rgb(202, 255, 227);
+    border: 1px solid #dcdcdc;
+}
+
+QListWidget::item {
+    padding: 5px;
+}
+
+QListWidget::item:selected {
+    background-color: #3498db;
+    color: white;
+}
+
+QListWidget::item:hover {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+QListWidget::item:selected:active {
+    background-color: #2980b9;
+    color: white;
+}
+</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>سرطان</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>ایدز</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>ریه</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>بیمار ترخیص شده</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>بیمار بستری</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>بیمار سرپایی</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>بیمه </string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>ریه</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>انتوبه</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>مشکل در پرداخت</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>چشم</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>گوش</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>تخت فعال</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>قطه عضو</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>اهدای عضو</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>اضافه کردن برچسب:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_3">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="toolTip">
+                  <string>برچسب های دلخواه را اضافه کنید</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+            QPushButton {
+                background-color: rgb(170, 255, 255);
+                color: black;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(153, 229, 229);
+            }
+        
+</string>
+                 </property>
+                 <property name="text">
+                  <string>اضافه کن</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>C:/Users/techp/Downloads/kisspng-plus-and-minus-signs-computer-icons-clip-art-plus-sign-5aaad857361cb2.9687832115211459432217.png</normaloff>C:/Users/techp/Downloads/kisspng-plus-and-minus-signs-computer-icons-clip-art-plus-sign-5aaad857361cb2.9687832115211459432217.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="Line" name="line_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_7">
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="toolTip">
+                  <string>برچسب های خود را ذخیره کنید تا بعدن مجدد استفاده کنید.</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+            QPushButton {
+                background-color: rgb(170, 255, 255);
+                color: black;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(153, 229, 229);
+            }
+        
+</string>
+                 </property>
+                 <property name="text">
+                  <string>ذخیره کردن برچسب ها</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_8">
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="toolTip">
+                  <string>واردن کردن برچسب های ذخیره شده</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+            QPushButton {
+                background-color: rgb(170, 255, 255);
+                color: black;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(153, 229, 229);
+            }
+        
+</string>
+                 </property>
+                 <property name="text">
+                  <string>بارگذاری برچسب ها</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="toolTip">
+            <string>ذخیره داده ها با فرمت اکسل</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+            QPushButton {
+                background-color: green;
+                color: white;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: darkgreen;
+            }
+
+</string>
+           </property>
+           <property name="text">
+            <string>ذخیره بصورت اکسل</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>C:/Users/techp/Downloads/kisspng-microsoft-excel-logo-microsoft-word-microsoft-offi-excel-png-office-xlsx-icon-5ab06a0a133e36.9738910015215109220788.png</normaloff>C:/Users/techp/Downloads/kisspng-microsoft-excel-logo-microsoft-word-microsoft-offi-excel-png-office-xlsx-icon-5ab06a0a133e36.9738910015215109220788.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="toolTip">
+            <string>وارد کردن داده ها از اکسل به برنامه</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+            QPushButton {
+                background-color: green;
+                color: white;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: darkgreen;
+            }
+
+</string>
+           </property>
+           <property name="text">
+            <string>لود کردن پرونده ذخیره شده</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>C:/Users/techp/Downloads/kisspng-microsoft-excel-logo-microsoft-word-microsoft-offi-excel-png-office-xlsx-icon-5ab06a0a133e36.9738910015215109220788.png</normaloff>C:/Users/techp/Downloads/kisspng-microsoft-excel-logo-microsoft-word-microsoft-offi-excel-png-office-xlsx-icon-5ab06a0a133e36.9738910015215109220788.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>امنیت</string>
+        </attribute>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_11">
+                 <item>
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string>بروز رسانی اطلاعات کاربر:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_12">
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_10">
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_11"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_13">
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_9"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButton_11">
+                       <property name="styleSheet">
+                        <string notr="true">
+            QPushButton {
+                background-color: rgb(85, 85, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+				font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+                       </property>
+                       <property name="text">
+                        <string>حذف نام کاربری </string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButton_10">
+                       <property name="styleSheet">
+                        <string notr="true">
+            QPushButton {
+                background-color: rgb(85, 85, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+				font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+                       </property>
+                       <property name="text">
+                        <string>ایجاد نام کاربری و رمز عبور جدید</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="Line" name="line_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="styleSheet">
+                  <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>رمز گذاری فایل ( این بخش در دست تکمیل است)</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_4">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_15">
+                 <property name="styleSheet">
+                  <string notr="true">
+            QPushButton {
+                background-color: rgb(85, 85, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+				font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+                 </property>
+                 <property name="text">
+                  <string>رمز گذاری فایل</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_16">
+                 <property name="styleSheet">
+                  <string notr="true">
+            QPushButton {
+                background-color: rgb(85, 85, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+				font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+                 </property>
+                 <property name="text">
+                  <string>رمز گشایی فایل</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <item row="2" column="0">
+                  <widget class="QPushButton" name="pushButton_19">
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="toolTip">
+                    <string>از اسکن پرونده های حساس خودداری کنید!</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">
+            QPushButton {
+                background-color: rgb(255, 0, 0);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+				font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(255, 105, 105);
+            }
+        
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>اسکن پرونده با آنتی ویروس</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <spacer name="verticalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QCheckBox" name="checkBox_2">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>برنامه رو قفل کن</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="Line" name="line_7">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <item>
+                  <spacer name="horizontalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_13">
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(250, 255, 140);</string>
+                   </property>
+                   <property name="text">
+                    <string>بررسی جعل در سند</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="Line" name="line_8">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_15">
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>محتویات فایل اول:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>محتویات فایل دوم:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPlainTextEdit" name="plainTextEdit"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>مقایسه تغییرات فایل ها:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPlainTextEdit" name="plainTextEdit_3"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_17">
+                   <property name="styleSheet">
+                    <string notr="true">
+            QPushButton {
+                background-color: rgb(85, 85, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+				font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+                   </property>
+                   <property name="text">
+                    <string>انتخاب فایل های مشکوک</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_27">
+                   <property name="styleSheet">
+                    <string notr="true">
+            QPushButton {
+                background-color: rgb(85, 85, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+				font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+                   </property>
+                   <property name="text">
+                    <string>بررسی تغییرات</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_14">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>ظاهر</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_22">
+             <item>
+              <widget class="QCheckBox" name="checkBox_3">
+               <property name="text">
+                <string>حالت فوکوس</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_2">
+               <property name="styleSheet">
+                <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <property name="text">
+                <string>تم شماره 1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_4">
+               <property name="styleSheet">
+                <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <property name="text">
+                <string>تم شماره 2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_3">
+               <property name="styleSheet">
+                <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <property name="text">
+                <string>تم شماره 3</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton">
+               <property name="styleSheet">
+                <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <property name="text">
+                <string>تم کور رنگی</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_20">
+               <property name="styleSheet">
+                <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <property name="text">
+                <string>میزان شفافیت پنجره:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider">
+               <property name="styleSheet">
+                <string notr="true">
+            QSlider::groove:horizontal {
+               background-color: rgb(170, 170, 255);
+                height: 8px;
+                margin: 2px 0;
+            }
+
+            QSlider::handle:horizontal {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                    stop:0 #a3a3a3, stop:1 #ffffff);
+                border: 1px solid #777;
+                width: 15px;
+                margin: -2px 0;
+                border-radius: 3px;
+            }
+    </string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_21">
+               <property name="styleSheet">
+                <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <property name="text">
+                <string>یادداشت های شما</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPlainTextEdit" name="plainTextEdit_5">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(205, 205, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_19">
+               <item>
+                <widget class="QPushButton" name="pushButton_24">
+                 <property name="styleSheet">
+                  <string notr="true">
+            QPushButton {
+                background-color: rgb(170, 170, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+                 </property>
+                 <property name="text">
+                  <string>لود کرن یادداشت</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_18">
+                 <property name="styleSheet">
+                  <string notr="true">
+            QPushButton {
+                background-color: rgb(170, 170, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+                 </property>
+                 <property name="text">
+                  <string>ذخیره یادداشت</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="Line" name="line_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_22">
+               <property name="toolTip">
+                <string>کلمات پرکاربرد را جهت نشان دادن لغات پیشنهادی به برنامه اضافه کنید.</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+               </property>
+               <property name="text">
+                <string>اضافه کردن کلمات پر کاربرد:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_20">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_10">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_25">
+                 <property name="styleSheet">
+                  <string notr="true">
+            QPushButton {
+                background-color: rgb(170, 255, 255);
+                color: black;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(153, 229, 229);
+            }
+        
+</string>
+                 </property>
+                 <property name="text">
+                  <string>اضافه کن</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_26">
+               <property name="styleSheet">
+                <string notr="true">
+
+            QPushButton {
+                background-color: rgb(170, 170, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+				font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+               </property>
+               <property name="text">
+                <string>مشاهده کلمات اضافه شده به برنامه</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_28">
+               <property name="styleSheet">
+                <string notr="true">
+
+            QPushButton {
+                background-color: rgb(170, 170, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+				font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+               </property>
+               <property name="text">
+                <string>بستن پنجره</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_21"/>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_15">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_18">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_19">
+               <item>
+                <widget class="QLabel" name="label_15">
+                 <property name="text">
+                  <string>تاریخ امروز:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCalendarWidget" name="calendarWidget">
+                 <property name="styleSheet">
+                  <string notr="true">QCalendarWidget QWidget#qt_calendar_navigationbar {
+background-color: #333;
+}
+
+QCalendarWidget QAbstractItemView {
+selection-background-color: #FF6464;
+selection-color: white;
+} 
+
+QCalendarWidget QAbstractItemView:disabled {
+color: #666;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>ارتباط با کارشناس ای تی</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="4" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_16" stretch="15,1">
+           <item>
+            <widget class="QPushButton" name="pushButton_21">
+             <property name="styleSheet">
+              <string notr="true">
+            QPushButton {
+                background-color: rgb(170, 170, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+             </property>
+             <property name="text">
+              <string>ارسال پیام</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>C:/Users/techp/Downloads/kisspng-computer-icons-button-send-email-button-5ac4bc896d9823.4635189215228427614489.png</normaloff>C:/Users/techp/Downloads/kisspng-computer-icons-button-send-email-button-5ac4bc896d9823.4635189215228427614489.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_20">
+             <property name="styleSheet">
+              <string notr="true">
+            QPushButton {
+                background-color: rgb(170, 170, 255);
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(145, 145, 217);
+            }
+        
+</string>
+             </property>
+             <property name="text">
+              <string>درج سند</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>C:/Users/techp/Downloads/kisspng-paper-drawing-pin-clip-art-red-push-pin-5aaaab6c6aea18.5455399415211344444379.png</normaloff>C:/Users/techp/Downloads/kisspng-paper-drawing-pin-clip-art-red-push-pin-5aaaab6c6aea18.5455399415211344444379.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLineEdit" name="lineEdit_7">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 20px;
+                                        padding: 0 10px;
+                                        selection-background-color: darkgray;
+                                        font-size: 28px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_23">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_24">
+               <item>
+                <widget class="QLabel" name="label_16">
+                 <property name="text">
+                  <string>صفحه ارتباط با کارشناس مربوطه:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPlainTextEdit" name="plainTextEdit_4">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(235, 255, 255);</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_25">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_18">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_8">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_23">
+               <property name="styleSheet">
+                <string notr="true">
+            QPushButton {
+                background-color: rgb(255, 170, 0);
+                color: black;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(225, 150, 0);
+            }
+        
+</string>
+               </property>
+               <property name="text">
+                <string>پورت</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_17">
+               <property name="text">
+                <string>پورت را وارد کنید:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>45</width>
+                 <height>15</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_17">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_9">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_22">
+               <property name="styleSheet">
+                <string notr="true">
+            QPushButton {
+                background-color: rgb(255, 170, 0);
+                color: black;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(225, 150, 0);
+            }
+        
+</string>
+               </property>
+               <property name="text">
+                <string>IP</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>ای پی را وارد کنید:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>ارسال پیام:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_5">
+        <attribute name="title">
+         <string>دیتابیس</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_9">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="8" column="0">
+            <widget class="QPushButton" name="pushButton_12">
+             <property name="styleSheet">
+              <string notr="true">
+            QPushButton {
+                background-color: green;
+                color: white;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: darkgreen;
+            }
+
+</string>
+             </property>
+             <property name="text">
+              <string>لود کردن دیتا در پرونده</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>کد ملی:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_28">
+             <property name="text">
+              <string>نمایش دیتای کاربر:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_27">
+             <property name="text">
+              <string>شماره تلفن :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLineEdit" name="lineEdit_14">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLineEdit" name="lineEdit_13">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{ 
+                                        background-color:rgb(202, 255, 227);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QPlainTextEdit" name="plainTextEdit_6">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+background-color: rgb(202, 255, 227);
+</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QPushButton" name="pushButton_13">
+             <property name="styleSheet">
+              <string notr="true">
+            QPushButton {
+                background-color: green;
+                color: white;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: darkgreen;
+            }
+
+</string>
+             </property>
+             <property name="text">
+              <string>نمایش اطلاعات</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_21">
+             <item>
+              <widget class="QPushButton" name="pushButton_30">
+               <property name="styleSheet">
+                <string notr="true">
+            QPushButton {
+                background-color: green;
+                color: white;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: darkgreen;
+            }
+
+</string>
+               </property>
+               <property name="text">
+                <string>انتخاب مسیر</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_5">
+               <property name="toolTip">
+                <string>آدرس مسیر پایگاه داده را کپی کنید</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{ 
+                                        background-color:rgb(205, 205, 255);
+                                        border: 2px solid gray;
+                                        border-radius: 10px;
+                                        padding: 0 8px;
+                                        selection-background-color: darkgray;
+                                        font-size: 16px;}
+                                        QLineEdit:focus { 
+                                        background-color:rgb(192, 192, 255);}
+                                        </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_29">
+               <property name="lineWidth">
+                <number>19</number>
+               </property>
+               <property name="midLineWidth">
+                <number>5</number>
+               </property>
+               <property name="text">
+                <string>مسیر پایگاه داده رو وارد کنید:</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::AutoText</enum>
+               </property>
+               <property name="scaledContents">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_29">
+           <property name="styleSheet">
+            <string notr="true">
+            QPushButton {
+                background-color: rgb(255, 170, 0);
+                color: black;
+                border-radius: 10px;
+                padding: 10px;
+                transition: background-color 0.3s;
+            }
+
+            QPushButton:hover {
+                background-color: rgb(225, 150, 0);
+            }
+        
+</string>
+           </property>
+           <property name="text">
+            <string>ذخیره اطلاعات در دیتابیس</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_24">
+     <property name="text">
+      <string>Power By : Mehrdad Hasanzade - MedofileTeam</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

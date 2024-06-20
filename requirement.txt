@@ -1,0 +1,10 @@
+cryptography
+difflib
+docx
+enchant
+openpyxl
+PyPDF2
+PyQt5
+qdarkstyle
+requests
+speech_recognition
